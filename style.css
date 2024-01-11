@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white; 
+}
+
+
+.left {
+    width: 25vw;
+    padding: 10px;
+}
+
+.right {
+    width: 75vw;
+}
+
+/*.home{
+}*/
+.home ul li {
+    display: flex;
+    gap: 15px;
+    width: 15px;
+    list-style: none;
+    padding-top: 14px;
+    font-weight: bold;
+}
+.heading{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    list-style: none;
+    padding-top: 14px;
+    padding: 23px 14px;
+    align-items: center;
+    font-size: 13px;
+}
+.heading img{
+    width: 25px;
+}
+.library{
+    min-height: 80vh;
+    position: relative;
+
+}
+.footer{
+    display: flex;
+    font-size: 10px;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+}
+.footer a{
+    color: grey;
+}
+.right{
+    margin: 16px 0;
+    position: relative;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(27, 26, 26)
+}
+.header > *{
+    padding: 20px;
+}
+.spotifyPlaylists{
+    padding: 15px;
+}
+.cardContainer{
+    margin: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+
+.card{
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+    position: relative;
+}
+.card > *{
+    padding-top: 10px;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+.play{
+    width: 40px;
+    background-color: #1fdf64;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 168px;
+    right: 17px;
+    opacity: 0;
+    transition: all 1s ease-out;
+
+}
+.buttons > *{
+    margin: 0 12px;
+}
+.signupbtn{
+    background-color: rgb(27, 26, 26);
+    color: rgb(156, 148, 148);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+.signupbtn:hover{
+    font-size: 1.01rem;
+    color: white;
+
+} 
+.loginbtn{
+    background-color: white;
+    padding: 10px;
+    border-radius: 22px;
+    color: black;
+    width: 80px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.loginbtn:hover{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.playbar{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(37, 116, 37);
+    width: 100%;
+    padding: 12px;
+}
+.songbutton{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
